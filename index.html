@@ -1,47 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  hello
 
-  <!-- Messenger チャットプラグイン Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your チャットプラグイン code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "103546965989444");
-    chatbox.setAttribute("attribution", "biz_inbox");
-    // for customization
-    chatbox.setAttribute("logged_in_greeting", "logged_in_greeting!!");
-    chatbox.setAttribute("logged_out_greeting", "logged_out_greeting");
-    chatbox.setAttribute("greeting_dialog_display", "show");
-    chatbox.setAttribute("welcome_screen_greeting", "welcome_screen_greeting")
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v18.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ja_JP/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-</body>
+<html>
+    <head>
+    </head>
+    <body>        
+        <div>R</div>
+        <script>
+          window.relationChatWidget = { 
+            widgetId: 'ieikaghks'
+          }
+        </script>
+        <script defer src="https://dev-chat.7seeds.net/dist/loader.js"></script>
+    </body>
 </html>
